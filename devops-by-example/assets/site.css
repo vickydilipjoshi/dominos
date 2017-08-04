@@ -1,0 +1,138 @@
+/* header */
+
+.site-concept-keywords, .site-lang-keywords {
+  font-family: Georgia, serif;
+}
+
+.not-portable {
+  padding: 0.2em;
+}
+
+.header {
+  margin-top: 0.5em;
+}
+
+.cover-block img {
+  margin: 1em auto;
+  max-width: 150px;
+  box-shadow: 0em 0em 0.2em 0.2em #CCC
+}
+
+.site-title {
+  padding: 0em;
+}
+
+.site-title h1 {
+  font-weight: bold;
+}
+
+.site-concept-keywords {
+  font-size: 1.4em;
+}
+
+.site-lang-keywords {
+  font-style: italic;
+}
+
+.site-action-blocks {
+  background: #ECF4F4;
+  text-align: center;
+  padding-top: 0.5em;
+  padding-bottom: 1.5em;
+  margin-top: 2em;
+}
+
+
+/* buttons */
+
+.site-action-blocks a {
+  font-size: 1.2em;
+  padding: 0.5em;
+  border-radius: 0.2em;
+  box-shadow: 0em 0em 0.2em #666;
+  font-family: Georgia, serif;
+}
+
+.site-action-blocks a:hover {
+  text-decoration: none;
+}
+
+.site-action-blocks .download-tutorial-btn {
+  background: #FFF43B;
+  color: #000;
+  margin-right: 0.1em;
+  font-size: 0.65em;
+}
+
+.prices {
+  padding-top: 0.5em;
+  font-size: 2em;
+  font-family: Georgia;
+}
+
+.prices .price {
+  color: #999;
+  font-size: 0.8em;
+  text-decoration: line-through;
+}
+
+.prices .free-price {
+  font-size: 0.7em;
+}
+
+.koans-wrapper {
+  padding-right: 2.4em;
+}
+
+
+/* koans */
+
+.devops-koans h2 {
+  margin-bottom: 1em;
+  font-weight: bold;
+  font-size: 1.8em;
+}
+
+.devops-koans img {
+  margin: 0 auto;
+}
+
+
+/* Quotes */
+
+.quote-block .quote-divider {
+  color: #999;
+}
+
+.quote-block {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.quote-block .quote {
+  font-family: Georgia, serif;
+  color: #289E00;
+  font-size: 1.3em;
+  font-style: italic;
+}
+
+.quote-block .attribute {
+ color: #777;
+ font-size: 0.9em;
+}
+
+/* light torquise background */
+
+.detail-block {
+  padding: 1em 0em;
+  background: #ECF4F4;
+}
+
+
+.footer {
+  background: #EEE;
+  font-family: Georgia, serif;
+  margin: 5em 0em 0em 0em;
+  font-style: italic;
+  padding: 0.5em 0em 0.5em 0em;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>My blog</title>
+    <link href="/assets/blog.css" rel="stylesheet"/>
+
+    <script>
+      window.onload = function() {
+        var debugTitle = document.querySelector(".debug-info-wrapper .title");
+        debugTitle.addEventListener("click", function(event) {
+          var display = document.querySelector(".debug-info").style.display;
+          var status = document.querySelector(".debug-info-status");
+
+          if (display == "block") {
+            document.querySelector(".debug-info").style.display = "none";
+            status.innerHTML = "[-]";
+          }
+          else {
+            document.querySelector(".debug-info").style.display = "block";
+            status.innerHTML = "[+]";
+          }
+        });
+      };
+    </script>
+
+  </head>
+  <body>
+
+    <h1 align="center">This is a blog</h1>
+
+    {{ partial | safe }}
+
+    <div class="debug-info-wrapper">
+      <h4 class="title">
+        <span class="debug-info-status">[-]</span>
+        Debug info
+      </h4>
+
+      <div class="debug-info">
+        {% for header in ['Host', 'X-Forwarded-For'] %}
+          <p>
+            {{header}}:
+            <code>{{ headers.get(header) }}</code>
+          </p>
+        {% endfor %}
+      </div>
+    </div>
+
+  </body>
+</html>

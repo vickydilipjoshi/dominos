@@ -1,0 +1,24 @@
+body {
+  font-family: Georgia;
+}
+
+.debug-info-wrapper {
+  background: #eee;
+  padding: 0em 0.5em;
+  border: 1px solid #666;
+}
+
+.debug-info-wrapper .title {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.debug-info-wrapper .debug-info {
+  display: none;
+}
+
+.post-title {
+  font-family: PT Sans;
+}
